@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68DB189E2952A4D200E95B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB189D2952A4D200E95B23 /* AppDelegate.swift */; };
-		68DB18A02952A4D200E95B23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB189F2952A4D200E95B23 /* SceneDelegate.swift */; };
 		68DB18A22952A4D200E95B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18A12952A4D200E95B23 /* ViewController.swift */; };
-		68DB18A52952A4D200E95B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18A32952A4D200E95B23 /* Main.storyboard */; };
-		68DB18A72952A4D400E95B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18A62952A4D400E95B23 /* Assets.xcassets */; };
-		68DB18AA2952A4D400E95B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18A82952A4D400E95B23 /* LaunchScreen.storyboard */; };
 		68DB18B52952A4D400E95B23 /* Kmooc_ReactorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18B42952A4D400E95B23 /* Kmooc_ReactorKitTests.swift */; };
 		68DB18BF2952A4D400E95B23 /* Kmooc_ReactorKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18BE2952A4D400E95B23 /* Kmooc_ReactorKitUITests.swift */; };
 		68DB18C12952A4D400E95B23 /* Kmooc_ReactorKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18C02952A4D400E95B23 /* Kmooc_ReactorKitUITestsLaunchTests.swift */; };
+		68DB18DD2952FB0B00E95B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18D52952FB0B00E95B23 /* Assets.xcassets */; };
+		68DB18DE2952FB0B00E95B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18D62952FB0B00E95B23 /* LaunchScreen.storyboard */; };
+		68DB18DF2952FB0B00E95B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68DB18D82952FB0B00E95B23 /* Main.storyboard */; };
+		68DB18E02952FB0B00E95B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18DA2952FB0B00E95B23 /* AppDelegate.swift */; };
+		68DB18E22952FB0B00E95B23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB18DC2952FB0B00E95B23 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +37,18 @@
 
 /* Begin PBXFileReference section */
 		68DB189A2952A4D200E95B23 /* Kmooc_ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kmooc_ReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		68DB189D2952A4D200E95B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68DB189F2952A4D200E95B23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		68DB18A12952A4D200E95B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		68DB18A42952A4D200E95B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		68DB18A62952A4D400E95B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		68DB18A92952A4D400E95B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68DB18AB2952A4D400E95B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68DB18B02952A4D400E95B23 /* Kmooc_ReactorKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kmooc_ReactorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DB18B42952A4D400E95B23 /* Kmooc_ReactorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kmooc_ReactorKitTests.swift; sourceTree = "<group>"; };
 		68DB18BA2952A4D400E95B23 /* Kmooc_ReactorKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kmooc_ReactorKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68DB18BE2952A4D400E95B23 /* Kmooc_ReactorKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kmooc_ReactorKitUITests.swift; sourceTree = "<group>"; };
 		68DB18C02952A4D400E95B23 /* Kmooc_ReactorKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kmooc_ReactorKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68DB18D52952FB0B00E95B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68DB18D72952FB0B00E95B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68DB18D92952FB0B00E95B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68DB18DA2952FB0B00E95B23 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68DB18DC2952FB0B00E95B23 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,8 @@
 		68DB189C2952A4D200E95B23 /* Kmooc_ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
-				68DB189D2952A4D200E95B23 /* AppDelegate.swift */,
-				68DB189F2952A4D200E95B23 /* SceneDelegate.swift */,
+				68DB18D42952FB0B00E95B23 /* Supporting Files */,
 				68DB18A12952A4D200E95B23 /* ViewController.swift */,
-				68DB18A32952A4D200E95B23 /* Main.storyboard */,
-				68DB18A62952A4D400E95B23 /* Assets.xcassets */,
-				68DB18A82952A4D400E95B23 /* LaunchScreen.storyboard */,
-				68DB18AB2952A4D400E95B23 /* Info.plist */,
 			);
 			path = Kmooc_ReactorKit;
 			sourceTree = "<group>";
@@ -125,6 +120,19 @@
 				68DB18C02952A4D400E95B23 /* Kmooc_ReactorKitUITestsLaunchTests.swift */,
 			);
 			path = Kmooc_ReactorKitUITests;
+			sourceTree = "<group>";
+		};
+		68DB18D42952FB0B00E95B23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68DB18D52952FB0B00E95B23 /* Assets.xcassets */,
+				68DB18D62952FB0B00E95B23 /* LaunchScreen.storyboard */,
+				68DB18D82952FB0B00E95B23 /* Main.storyboard */,
+				68DB18DA2952FB0B00E95B23 /* AppDelegate.swift */,
+				68DB18DC2952FB0B00E95B23 /* SceneDelegate.swift */,
+				68DB18AB2952A4D400E95B23 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68DB18AA2952A4D400E95B23 /* LaunchScreen.storyboard in Resources */,
-				68DB18A72952A4D400E95B23 /* Assets.xcassets in Resources */,
-				68DB18A52952A4D200E95B23 /* Main.storyboard in Resources */,
+				68DB18DF2952FB0B00E95B23 /* Main.storyboard in Resources */,
+				68DB18DE2952FB0B00E95B23 /* LaunchScreen.storyboard in Resources */,
+				68DB18DD2952FB0B00E95B23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DB18E02952FB0B00E95B23 /* AppDelegate.swift in Sources */,
 				68DB18A22952A4D200E95B23 /* ViewController.swift in Sources */,
-				68DB189E2952A4D200E95B23 /* AppDelegate.swift in Sources */,
-				68DB18A02952A4D200E95B23 /* SceneDelegate.swift in Sources */,
+				68DB18E22952FB0B00E95B23 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,20 +305,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		68DB18A32952A4D200E95B23 /* Main.storyboard */ = {
+		68DB18D62952FB0B00E95B23 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68DB18A42952A4D200E95B23 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		68DB18A82952A4D400E95B23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				68DB18A92952A4D400E95B23 /* Base */,
+				68DB18D72952FB0B00E95B23 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		68DB18D82952FB0B00E95B23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68DB18D92952FB0B00E95B23 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,7 +447,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5K4V5MB9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kmooc_ReactorKit/Info.plist;
+				INFOPLIST_FILE = "Kmooc_ReactorKit/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z5K4V5MB9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kmooc_ReactorKit/Info.plist;
+				INFOPLIST_FILE = "Kmooc_ReactorKit/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
