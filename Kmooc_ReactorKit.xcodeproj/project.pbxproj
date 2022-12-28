@@ -27,6 +27,13 @@
 		68DB190829597CFE00E95B23 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 68DB190729597CFE00E95B23 /* Then */; };
 		68DB190B29597EB300E95B23 /* KmoocListItemtableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB190A29597EB300E95B23 /* KmoocListItemtableViewCell.swift */; };
 		68DB190D295982DC00E95B23 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB190C295982DC00E95B23 /* UIStackView+Extension.swift */; };
+		68DB1912295AD77100E95B23 /* NotoSansKR-Bold-Hestia.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68DB190F295AD77100E95B23 /* NotoSansKR-Bold-Hestia.otf */; };
+		68DB1913295AD77100E95B23 /* NotoSansKR-Medium-Hestia.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68DB1910295AD77100E95B23 /* NotoSansKR-Medium-Hestia.otf */; };
+		68DB1914295AD77100E95B23 /* NotoSansKR-Regular-Hestia.otf in Resources */ = {isa = PBXBuildFile; fileRef = 68DB1911295AD77100E95B23 /* NotoSansKR-Regular-Hestia.otf */; };
+		68DB1916295AD83C00E95B23 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB1915295AD83C00E95B23 /* UIFont+Extension.swift */; };
+		68DB1919295AEBCD00E95B23 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB1918295AEBCD00E95B23 /* Lecture.swift */; };
+		68DB191B295AED3C00E95B23 /* LectureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB191A295AED3C00E95B23 /* LectureList.swift */; };
+		68DB191D295AEEEE00E95B23 /* KmoocDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +73,13 @@
 		68DB190429597BD100E95B23 /* SnapKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
 		68DB190A29597EB300E95B23 /* KmoocListItemtableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmoocListItemtableViewCell.swift; sourceTree = "<group>"; };
 		68DB190C295982DC00E95B23 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		68DB190F295AD77100E95B23 /* NotoSansKR-Bold-Hestia.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold-Hestia.otf"; path = "../../../../Desktop/CustomFont/CustomFont/NotoSansKR-Bold-Hestia.otf"; sourceTree = "<group>"; };
+		68DB1910295AD77100E95B23 /* NotoSansKR-Medium-Hestia.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium-Hestia.otf"; path = "../../../../Desktop/CustomFont/CustomFont/NotoSansKR-Medium-Hestia.otf"; sourceTree = "<group>"; };
+		68DB1911295AD77100E95B23 /* NotoSansKR-Regular-Hestia.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular-Hestia.otf"; path = "../../../../Desktop/CustomFont/CustomFont/NotoSansKR-Regular-Hestia.otf"; sourceTree = "<group>"; };
+		68DB1915295AD83C00E95B23 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		68DB1918295AEBCD00E95B23 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+		68DB191A295AED3C00E95B23 /* LectureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureList.swift; sourceTree = "<group>"; };
+		68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmoocDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +135,10 @@
 		68DB189C2952A4D200E95B23 /* Kmooc_ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				68DB18E329593E1E00E95B23 /* Extension */,
 				68DB18E529593E5E00E95B23 /* Presentation */,
 				68DB18E429593E3600E95B23 /* Network */,
-				68DB18E329593E1E00E95B23 /* Extension */,
+				68DB1917295AEBAD00E95B23 /* Model */,
 				68DB18D42952FB0B00E95B23 /* Supporting Files */,
 			);
 			path = Kmooc_ReactorKit;
@@ -149,6 +164,7 @@
 		68DB18D42952FB0B00E95B23 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68DB190E295AD72800E95B23 /* font */,
 				68DB18D52952FB0B00E95B23 /* Assets.xcassets */,
 				68DB18D62952FB0B00E95B23 /* LaunchScreen.storyboard */,
 				68DB18DA2952FB0B00E95B23 /* AppDelegate.swift */,
@@ -164,6 +180,7 @@
 				68DB1902295970DA00E95B23 /* UIView+Extension.swift */,
 				68DB190429597BD100E95B23 /* SnapKit+Extension.swift */,
 				68DB190C295982DC00E95B23 /* UIStackView+Extension.swift */,
+				68DB1915295AD83C00E95B23 /* UIFont+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -199,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				68DB18FA295960CD00E95B23 /* KmoocDetailViewController.swift */,
+				68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -209,6 +227,25 @@
 				68DB190A29597EB300E95B23 /* KmoocListItemtableViewCell.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		68DB190E295AD72800E95B23 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				68DB190F295AD77100E95B23 /* NotoSansKR-Bold-Hestia.otf */,
+				68DB1910295AD77100E95B23 /* NotoSansKR-Medium-Hestia.otf */,
+				68DB1911295AD77100E95B23 /* NotoSansKR-Regular-Hestia.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		68DB1917295AEBAD00E95B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68DB1918295AEBCD00E95B23 /* Lecture.swift */,
+				68DB191A295AED3C00E95B23 /* LectureList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				68DB18DE2952FB0B00E95B23 /* LaunchScreen.storyboard in Resources */,
+				68DB1912295AD77100E95B23 /* NotoSansKR-Bold-Hestia.otf in Resources */,
+				68DB1914295AD77100E95B23 /* NotoSansKR-Regular-Hestia.otf in Resources */,
+				68DB1913295AD77100E95B23 /* NotoSansKR-Medium-Hestia.otf in Resources */,
 				68DB18DD2952FB0B00E95B23 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DB1919295AEBCD00E95B23 /* Lecture.swift in Sources */,
+				68DB191D295AEEEE00E95B23 /* KmoocDetailView.swift in Sources */,
 				68DB18E929593F7400E95B23 /* KmoocListViewController.swift in Sources */,
 				68DB1903295970DA00E95B23 /* UIView+Extension.swift in Sources */,
 				68DB18FB295960CD00E95B23 /* KmoocDetailViewController.swift in Sources */,
@@ -361,9 +403,11 @@
 				68DB190B29597EB300E95B23 /* KmoocListItemtableViewCell.swift in Sources */,
 				68DB18FD2959686300E95B23 /* KmoocListReactor.swift in Sources */,
 				68DB190529597BD100E95B23 /* SnapKit+Extension.swift in Sources */,
+				68DB191B295AED3C00E95B23 /* LectureList.swift in Sources */,
 				68DB18E02952FB0B00E95B23 /* AppDelegate.swift in Sources */,
 				68DB18E22952FB0B00E95B23 /* SceneDelegate.swift in Sources */,
 				68DB18FF2959691B00E95B23 /* KmoocListView.swift in Sources */,
+				68DB1916295AD83C00E95B23 /* UIFont+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

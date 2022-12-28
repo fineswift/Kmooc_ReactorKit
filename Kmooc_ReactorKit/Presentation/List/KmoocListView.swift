@@ -7,16 +7,14 @@
 
 import UIKit
 import RxSwift
-import Then
+import RxCocoa
 import SnapKit
+import Then
 
 class KmoocListView: UIView {
     let disposeBag = DisposeBag()
     
-    lazy var tableView = UITableView().then {
-        $0.separatorStyle = .none
-    }
-    
+    // MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
@@ -26,11 +24,35 @@ class KmoocListView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - View
+    lazy var tableView = UITableView().then {
+        $0.separatorStyle = .none
+        $0.register(KmoocListItemTableViewCell.self, forCellReuseIdentifier: KmoocListItemTableViewCell.identifier)
+        $0.delegate = self
+        $0.dataSource = self
+    }
+    
+    // MARK: - Methods
     func setupLayout() {
         addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
+}
+
+extension KmoocListView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: KmoocListItemTableViewCell.identifier) as! KmoocListItemTableViewCell
+        cell.nameLabel.text = "Label"
+        cell.durationLabel.text = "asdf"
+        cell.orgNameLabel.text = "1234"
+        return cell
+    }
+    
     
 }

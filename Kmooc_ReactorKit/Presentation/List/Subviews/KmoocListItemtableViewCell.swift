@@ -10,6 +10,7 @@ import Then
 import SnapKit
 
 class KmoocListItemTableViewCell: UITableViewCell {
+    static let identifier = String(describing: KmoocListItemTableViewCell.self)
     
     lazy var containerStackView = UIStackView().then {
         $0.axis = .horizontal
@@ -18,7 +19,9 @@ class KmoocListItemTableViewCell: UITableViewCell {
         $0.spacing = 16
     }
     
-    lazy var thumbnailImageView = UIImageView()
+    lazy var thumbnailImageView = UIImageView().then {
+        $0.backgroundColor = .black
+    }
     
     lazy var contentStackView = UIStackView().then {
         $0.axis = .vertical
@@ -27,11 +30,23 @@ class KmoocListItemTableViewCell: UITableViewCell {
         $0.spacing = 0
     }
     
-    lazy var nameLabel = UILabel()
+    lazy var nameLabel = UILabel().then {
+        $0.font = .notoSans(.medium, size: 20)
+    }
     
-    lazy var orgNameLabel = UILabel()
+    lazy var orgNameLabel = UILabel().then {
+        $0.textColor = .lightGray
+        $0.font = .notoSans(size: 12)
+    }
     
-    lazy var durationLabel = UILabel()
+    lazy var durationLabel = UILabel().then {
+        $0.textColor = .lightGray
+        $0.font = .notoSans(size: 12)
+    }
+    
+    lazy var underLineView = UIView().then {
+        $0.backgroundColor = .systemGray3
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -43,7 +58,26 @@ class KmoocListItemTableViewCell: UITableViewCell {
     }
     
     func setupLayout() {
-        contentStackView.addArrangedSubviews([])
+        selectionStyle = .none
+        
+        contentStackView.addArrangedSubviews([nameLabel, orgNameLabel, durationLabel])
+        nameLabel.snp.makeConstraints {
+            $0.height.equalTo(40)
+        }
+        
         containerStackView.addArrangedSubviews([thumbnailImageView, contentStackView])
+        thumbnailImageView.snp.makeConstraints {
+            $0.height.equalToSuperview()
+            $0.width.equalTo(thumbnailImageView.snp.height).multipliedBy(16 / 9)
+        }
+        
+        addSubview(containerStackView)
+        containerStackView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+    
+    func bindData() {
+        
     }
 }
