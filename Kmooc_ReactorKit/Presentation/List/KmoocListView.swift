@@ -13,11 +13,15 @@ import Then
 
 class KmoocListView: UIView {
     let disposeBag = DisposeBag()
-    
+    var list = LectureList()
     // MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
+        NetworkService.shared.list {
+            self.list = $0
+            self.tableView.reloadData()
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -43,14 +47,12 @@ class KmoocListView: UIView {
 
 extension KmoocListView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return list.lectures?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: KmoocListItemTableViewCell.identifier) as! KmoocListItemTableViewCell
-        cell.nameLabel.text = "Label"
-        cell.durationLabel.text = "asdf"
-        cell.orgNameLabel.text = "1234"
+        cell.bindData(list.lectures![indexPath.row])
         return cell
     }
     

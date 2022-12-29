@@ -59,25 +59,40 @@ class KmoocListItemTableViewCell: UITableViewCell {
     
     func setupLayout() {
         selectionStyle = .none
-        
-        contentStackView.addArrangedSubviews([nameLabel, orgNameLabel, durationLabel])
-        nameLabel.snp.makeConstraints {
-            $0.height.equalTo(40)
+        addSubview(containerStackView)
+        containerStackView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
         }
         
         containerStackView.addArrangedSubviews([thumbnailImageView, contentStackView])
         thumbnailImageView.snp.makeConstraints {
             $0.height.equalToSuperview()
-            $0.width.equalTo(thumbnailImageView.snp.height).multipliedBy(16 / 9)
+            $0.width.equalTo(thumbnailImageView.snp.height).multipliedBy(1.7778)
         }
         
-        addSubview(containerStackView)
-        containerStackView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+        contentStackView.addArrangedSubviews([nameLabel, orgNameLabel, durationLabel])
+        nameLabel.snp.makeConstraints {
+            $0.height.equalTo(40)
         }
     }
     
-    func bindData() {
+    func bindData(_ item: Lecture) {
+        if let name = item.name {
+            nameLabel.text = name
+        }
         
+        if let orgName = item.orgName {
+            orgNameLabel.text = orgName
+        }
+        
+        durationLabel.text = "TEST ~ TEST"
+        
+        DispatchQueue.global(qos: .background).async {
+            if let url = URL(string: item.courseImage ?? ""), let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    self.thumbnailImageView.image = UIImage(data: data)
+                }
+            }
+        }
     }
 }

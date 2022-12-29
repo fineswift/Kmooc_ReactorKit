@@ -18,11 +18,17 @@ class KmoocDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setupLayout()
     }
     
     // MARK: - View
+    let subView = KmoocDetailView()
+    
     func setupLayout() {
-        
+        view.addSubview(subView)
+        subView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }

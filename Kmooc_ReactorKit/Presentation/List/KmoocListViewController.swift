@@ -18,6 +18,7 @@ class KmoocListViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "K-MOOC"
         setupLayout()
         bindData()
     }

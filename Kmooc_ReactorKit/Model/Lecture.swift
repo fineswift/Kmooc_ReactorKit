@@ -19,9 +19,9 @@ struct Lecture: Decodable {
     /// 강좌 분류2
     var middleClassfyName: String?
     /// 강좌 썸네일 (media>image>small)
-    var couresImage: String?
+    var courseImage: String?
     /// 강화 이미지 (media>image>large)
-    var couresImageLarge: String?
+    var courseImageLarge: String?
     /// 짧은 설명
     var shortDescription: String?
     /// 운영 기관

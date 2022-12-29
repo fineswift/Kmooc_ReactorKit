@@ -34,6 +34,8 @@
 		68DB1919295AEBCD00E95B23 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB1918295AEBCD00E95B23 /* Lecture.swift */; };
 		68DB191B295AED3C00E95B23 /* LectureList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB191A295AED3C00E95B23 /* LectureList.swift */; };
 		68DB191D295AEEEE00E95B23 /* KmoocDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */; };
+		68DB1920295C259D00E95B23 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 68DB191F295C259D00E95B23 /* Alamofire */; };
+		68DB1922295C2B7E00E95B23 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB1921295C2B7E00E95B23 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 		68DB1918295AEBCD00E95B23 /* Lecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
 		68DB191A295AED3C00E95B23 /* LectureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureList.swift; sourceTree = "<group>"; };
 		68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmoocDetailView.swift; sourceTree = "<group>"; };
+		68DB1921295C2B7E00E95B23 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 				68DB190829597CFE00E95B23 /* Then in Frameworks */,
 				68DB18F729595FE400E95B23 /* RxCocoa in Frameworks */,
 				68DB18F12959598500E95B23 /* SnapKit in Frameworks */,
+				68DB1920295C259D00E95B23 /* Alamofire in Frameworks */,
 				68DB18F929595FE400E95B23 /* RxSwift in Frameworks */,
 				68DB18F429595A8400E95B23 /* ReactorKit in Frameworks */,
 			);
@@ -188,6 +192,7 @@
 		68DB18E429593E3600E95B23 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				68DB1921295C2B7E00E95B23 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				68DB18F629595FE400E95B23 /* RxCocoa */,
 				68DB18F829595FE400E95B23 /* RxSwift */,
 				68DB190729597CFE00E95B23 /* Then */,
+				68DB191F295C259D00E95B23 /* Alamofire */,
 			);
 			productName = Kmooc_ReactorKit;
 			productReference = 68DB189A2952A4D200E95B23 /* Kmooc_ReactorKit.app */;
@@ -348,6 +354,7 @@
 				68DB18F229595A8300E95B23 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				68DB18F529595FE400E95B23 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				68DB190629597CFE00E95B23 /* XCRemoteSwiftPackageReference "Then" */,
+				68DB191E295C259D00E95B23 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 68DB189B2952A4D200E95B23 /* Products */;
 			projectDirPath = "";
@@ -404,6 +411,7 @@
 				68DB18FD2959686300E95B23 /* KmoocListReactor.swift in Sources */,
 				68DB190529597BD100E95B23 /* SnapKit+Extension.swift in Sources */,
 				68DB191B295AED3C00E95B23 /* LectureList.swift in Sources */,
+				68DB1922295C2B7E00E95B23 /* NetworkService.swift in Sources */,
 				68DB18E02952FB0B00E95B23 /* AppDelegate.swift in Sources */,
 				68DB18E22952FB0B00E95B23 /* SceneDelegate.swift in Sources */,
 				68DB18FF2959691B00E95B23 /* KmoocListView.swift in Sources */,
@@ -785,6 +793,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		68DB191E295C259D00E95B23 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -812,6 +828,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 68DB190629597CFE00E95B23 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		68DB191F295C259D00E95B23 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68DB191E295C259D00E95B23 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
