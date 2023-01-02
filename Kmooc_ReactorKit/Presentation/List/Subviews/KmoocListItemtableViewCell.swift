@@ -85,7 +85,9 @@ class KmoocListItemTableViewCell: UITableViewCell {
             orgNameLabel.text = orgName
         }
         
-        durationLabel.text = "TEST ~ TEST"
+        if let start = item.start, let end = item.end {
+            durationLabel.text = "\(Date().formatDate(start)) ~ \(Date().formatDate(end))"
+        }
         
         DispatchQueue.global(qos: .background).async {
             if let url = URL(string: item.courseImage ?? ""), let data = try? Data(contentsOf: url) {

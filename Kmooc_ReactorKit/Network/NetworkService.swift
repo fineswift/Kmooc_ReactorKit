@@ -88,8 +88,8 @@ extension NetworkService {
                        courseImageLarge: ((jsonObject["media"] as! [String: Any])["image"] as! [String: Any])["large"] as? String,
                        shortDescription: jsonObject["short_description"] as? String,
                        orgName: jsonObject["org_name"] as? String,
-                       start: nil,
-                       end: nil,
+                       start: Date().parseDate(jsonObject["start"] as! String),
+                       end: Date().parseDate(jsonObject["end"] as! String),
                        teachers: jsonObject["teachers"] as? String,
                        overview: jsonObject["overview"] as? String)
     }

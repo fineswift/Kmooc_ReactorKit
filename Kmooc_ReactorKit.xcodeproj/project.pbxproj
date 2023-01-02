@@ -36,6 +36,7 @@
 		68DB191D295AEEEE00E95B23 /* KmoocDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */; };
 		68DB1920295C259D00E95B23 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 68DB191F295C259D00E95B23 /* Alamofire */; };
 		68DB1922295C2B7E00E95B23 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB1921295C2B7E00E95B23 /* NetworkService.swift */; };
+		68DB19242962914A00E95B23 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DB19232962914A00E95B23 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		68DB191A295AED3C00E95B23 /* LectureList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureList.swift; sourceTree = "<group>"; };
 		68DB191C295AEEEE00E95B23 /* KmoocDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmoocDetailView.swift; sourceTree = "<group>"; };
 		68DB1921295C2B7E00E95B23 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		68DB19232962914A00E95B23 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				68DB190429597BD100E95B23 /* SnapKit+Extension.swift */,
 				68DB190C295982DC00E95B23 /* UIStackView+Extension.swift */,
 				68DB1915295AD83C00E95B23 /* UIFont+Extension.swift */,
+				68DB19232962914A00E95B23 /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				68DB18E929593F7400E95B23 /* KmoocListViewController.swift in Sources */,
 				68DB1903295970DA00E95B23 /* UIView+Extension.swift in Sources */,
 				68DB18FB295960CD00E95B23 /* KmoocDetailViewController.swift in Sources */,
+				68DB19242962914A00E95B23 /* Date+Extension.swift in Sources */,
 				68DB190D295982DC00E95B23 /* UIStackView+Extension.swift in Sources */,
 				68DB190B29597EB300E95B23 /* KmoocListItemtableViewCell.swift in Sources */,
 				68DB18FD2959686300E95B23 /* KmoocListReactor.swift in Sources */,

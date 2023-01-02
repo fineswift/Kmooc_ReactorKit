@@ -18,10 +18,6 @@ class KmoocListView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
-        NetworkService.shared.list {
-            self.list = $0
-            self.tableView.reloadData()
-        }
     }
     
     required init?(coder: NSCoder) {
