@@ -28,8 +28,6 @@ class KmoocListView: UIView {
     lazy var tableView = UITableView().then {
         $0.separatorStyle = .none
         $0.register(KmoocListItemTableViewCell.self, forCellReuseIdentifier: KmoocListItemTableViewCell.identifier)
-        $0.delegate = self
-        $0.dataSource = self
     }
     
     // MARK: - Methods
@@ -39,18 +37,12 @@ class KmoocListView: UIView {
             $0.edges.equalToSuperview()
         }
     }
-}
-
-extension KmoocListView: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.lectures?.count ?? 0
+    
+    func bind(_ reactor: KmoocListReactor) {
+        reactor.state
+            .compactMap { $0.lectureList.lectures }
+            .bind(to: tableView.rx.items(cellIdentifier: KmoocListItemTableViewCell.identifier, cellType: KmoocListItemTableViewCell.self)) { row, item, cell in
+                cell.bindData(item)
+            }.disposed(by: disposeBag)
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: KmoocListItemTableViewCell.identifier) as! KmoocListItemTableViewCell
-        cell.bindData(list.lectures![indexPath.row])
-        return cell
-    }
-    
-    
 }

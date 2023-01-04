@@ -17,7 +17,7 @@ class KmoocListReactor: Reactor {
     }
     
     enum Mutation {
-        case loadList
+        case requestList(LectureList)
         case nextList
     }
     
@@ -34,11 +34,24 @@ extension KmoocListReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .refresh:
-            return .just(.loadList)
+            return requestLectureList().flatMap { lectureList -> Observable<Mutation> in
+                return .just(.requestList(lectureList))
+            }
         case .loadMore:
             return .just(.nextList)
         case .showDetail:
             break
+        }
+        return .just(.nextList)
+    }
+    
+    func requestLectureList() -> Observable<LectureList> {
+        return Observable<LectureList>.create { observer in
+            NetworkService.shared.list {
+                observer.onNext($0)
+                observer.onCompleted()
+            }
+            return Disposables.create()
         }
     }
 }
@@ -47,12 +60,10 @@ extension KmoocListReactor {
     func reduce(state: State, mutation: Mutation) -> State {
         var newState = state
         switch mutation {
-        case .loadList:
+        case .requestList(let list):
             newState.isLoading = true
-            NetworkService.shared.list {
-                newState.lectureList = $0
-                newState.isLoading = false
-            }
+            newState.lectureList = list
+            newState.isLoading = false
         case .nextList:
             guard !newState.isLoading else { return state }
             newState.isLoading = true
@@ -64,6 +75,6 @@ extension KmoocListReactor {
             }
         }
         
-        return state
+        return newState
     }
 }

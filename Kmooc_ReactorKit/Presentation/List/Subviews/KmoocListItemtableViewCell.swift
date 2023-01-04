@@ -20,7 +20,7 @@ class KmoocListItemTableViewCell: UITableViewCell {
     }
     
     lazy var thumbnailImageView = UIImageView().then {
-        $0.backgroundColor = .black
+        $0.backgroundColor = .lightGray
     }
     
     lazy var contentStackView = UIStackView().then {

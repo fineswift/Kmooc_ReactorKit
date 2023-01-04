@@ -14,6 +14,15 @@ import ReactorKit
 class KmoocListViewController: UIViewController, View {
     typealias Reactor = KmoocListReactor
     
+    init(reactor: KmoocListReactor) {
+        super.init(nibName: nil, bundle: nil)
+        self.reactor = reactor
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Properties
     var disposeBag = DisposeBag()
     
@@ -22,7 +31,7 @@ class KmoocListViewController: UIViewController, View {
         super.viewDidLoad()
         self.title = "K-MOOC"
         setupLayout()
-//        bindData()
+        self.reactor?.action.onNext(.refresh)
     }
     
     // MARK: - View
@@ -37,7 +46,12 @@ class KmoocListViewController: UIViewController, View {
     
     // MARK: - Methods
     func bind(reactor: Reactor) {
-        <#code#>
+        kmoocListView.bind(reactor)
+        
+//        self.rx.viewDidLoad
+//            .map { Reactor.Action.refresh }
+//            .bind(to: reactor.action)
+//            .disposed(by: disposeBag)
     }
     
 //    func bindData() {
